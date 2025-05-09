@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="3d-stopwatch.png">
     <link rel="stylesheet" href="style.css">
     <title>Sekundomer</title>
 </head>
 <body>
     <div class="all">
-        <h1>Sekundomer</h1>
-        <div id="timer">0</div>
-        <button onclick="startTimer()">Start</button>
-        <button onclick="stopTimer()">Stop</button>
+        <div class="timer">
+            <div id="minute">00</div>:
+            <div id="second">00</div>:
+            <div id="millisecond">000</div>
+        </div>
+        <div class="btn">
+            <button id="startBtn" onclick="startTimer()">Start</button>
+            <button id="stopBtn" onclick="stopTimer()" style="display: none;">Stop</button>
+            <button id="resetBtn" onclick="resetTimer()" style="display: none;">Reset</button>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
