@@ -1,7 +1,7 @@
-let minutes = 0;
-let seconds = 0;
-let milliseconds = 0;
-let timer = null;
+const minutes = 0;
+const seconds = 0;
+const milliseconds = 0;
+const timer = null;
 
 function startTimer() {
     if (timer === null) {
@@ -53,3 +53,4 @@ function resetTimer() {
 function formatTime(time, digits) {
     return time.toString().padStart(digits, '0');
 }
+
